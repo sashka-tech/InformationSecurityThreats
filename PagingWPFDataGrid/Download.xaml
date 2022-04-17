@@ -1,0 +1,22 @@
+﻿<Window x:Class="Lab2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="Download File" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="359*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Download" HorizontalAlignment="Left" Margin="246,181,0,0" VerticalAlignment="Top" Height="62" Width="144" Background="#FFECECEC" Click="button_Click" Grid.Column="1"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="42,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="560" Height="29" Grid.Column="1"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="42,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="560" Height="29" TextChanged="textBox1_TextChanged" Grid.Column="1"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="50" Margin="10,307,0,0" VerticalAlignment="Top" Width="780" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="URL:&#xD;&#xA;" HorizontalAlignment="Left" Margin="38,86,0,0" VerticalAlignment="Top" Width="81" Height="27" FontSize="14" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy" Content="File Path:&#xD;&#xA;" HorizontalAlignment="Left" Margin="38,120,0,0" VerticalAlignment="Top" Width="81" Height="27" FontSize="14" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
